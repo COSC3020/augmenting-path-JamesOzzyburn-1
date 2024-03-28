@@ -33,3 +33,7 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+
+## Answer
+In the program we first have to make our visited list of nodes and set them to false which takes $V$. We then call our findAugPathRecursive which will at worst go through every single node and edge which will take $V + E$. To get our total worst case complexity we just combine then which yields us $(2 * V) + E$. This then gives a final answer for our worse case of $\Theta(V + E)$
